@@ -3,8 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <title>Seller Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #ffffff;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 350px;
+            width: 100%;
+        }
+        .container h1 {
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .input-container {
+            position: relative;
+            margin-bottom: 1rem;
+        }
+        .input-container input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: none;
+            border-radius: 0.5rem;
+            outline: none;
+            font-size: 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            box-sizing: border-box;
+        }
+        .input-container span {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 1rem;
+            color: #ffffff;
+        }
+        .submit {
+            background-color: #4F46E5;
+            color: #ffffff;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            text-transform: uppercase;
+            width: 100%;
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+        .signup-link {
+            color: #ffffff;
+            margin-top: 1rem;
+            font-size: 0.875rem;
+        }
+        .signup-link a {
+            text-decoration: underline;
+            color: #ffffff;
+        }
+    </style>
 </head>
 <body>
-<h3>This is Login Page for Seller or Shop Owner</h3>
+    <div class="container">
+        <h1>Welcome!</h1>
+        <form>
+            <div class="input-container">
+                <input type="email" placeholder="Enter email">
+                <span>
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path>
+                    </svg>
+                </span>
+            </div>
+            <div class="input-container">
+                <input type="password" placeholder="Enter password">
+                <span>
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                    </svg>
+                </span>
+            </div>
+            <button type="submit" class="submit">Sign in</button>
+        </form>
+
+    </div>
 </body>
 </html>

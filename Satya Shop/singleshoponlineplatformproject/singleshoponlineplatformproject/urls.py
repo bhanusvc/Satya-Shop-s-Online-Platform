@@ -23,6 +23,7 @@ urlpatterns = [
     path('',views.landingpage,name="landing"),
     path('home',views.homepage,name="home"),
     path('about',views.aboutpage,name="about"),
-    path('contact', views.contactpage, name="contact and faq"),
+    path('contact', views.contactpage, name="contact"),
     path('catalog', views.catalogpage, name="catalog"),
+    path('sellerlogin',views.sellerloginpage,name="sellerlogin"),
 ]

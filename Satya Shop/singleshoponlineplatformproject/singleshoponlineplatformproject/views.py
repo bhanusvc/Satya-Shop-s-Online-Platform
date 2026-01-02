@@ -1,5 +1,4 @@
 from django.shortcuts import render
-
 def landingpage(request):
     return render(request,"index.html")
 def homepage(request):
@@ -10,3 +9,5 @@ def contactpage(request):
     return render(request,"contactandfaq.html")
 def catalogpage(request):
     return render(request,"catalog.html")
+def sellerloginpage(request):
+    return render(request,"seller/sellerlogin.html")

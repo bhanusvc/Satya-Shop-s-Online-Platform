@@ -9,5 +9,3 @@ def contactpage(request):
     return render(request,"contactandfaq.html")
 def catalogpage(request):
     return render(request,"catalog.html")
-def sellerloginpage(request):
-    return render(request,"seller/sellerlogin.html")

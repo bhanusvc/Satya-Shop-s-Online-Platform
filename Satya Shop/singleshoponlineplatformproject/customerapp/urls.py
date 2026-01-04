@@ -4,7 +4,8 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-
+        path('customerlogin',views.customerloginpage,name="cusotmerlogin"),
+        path('customerregistration',views.customerregisterpage,name="customerregistration"),
 ]
 
 if settings.DEBUG:

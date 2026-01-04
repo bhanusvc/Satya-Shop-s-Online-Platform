@@ -39,6 +39,7 @@ def sellerhomepage(request):
         return redirect("sellerloginpage")
     return render(request, "seller/sellerhome.html")
 
+# Add Items Page
 def additemspage(request):
     if "seller_id" not in request.session:
         return redirect("sellerloginpage")

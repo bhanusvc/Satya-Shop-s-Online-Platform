@@ -77,14 +77,6 @@
         <a href="{% url 'edititems' %}">Edit Items</a>
         <a href="{% url 'sellerorders' %}">Show Orders</a>
         <a href="{% url 'sellerlogout' %}">Logout</a>
-
-        <!-- OPTION B (later): JS-based switching -->
-        <!--
-        <a href="#" onclick="loadSection('add')">Add Item</a>
-        <a href="#" onclick="loadSection('list')">List Items</a>
-        <a href="#" onclick="loadSection('edit')">Edit Items</a>
-        <a href="#" onclick="loadSection('orders')">Show Orders</a>
-        -->
     </div>
 
     <!-- Main Content -->
@@ -98,35 +90,6 @@
     </div>
 
 </div>
-
-<!-- OPTIONAL JS for same-page content switching -->
-<script>
-    function loadSection(section) {
-        const content = document.getElementById("content-area");
-
-        if (section === "add") {
-            content.innerHTML = `
-                <h1>Add Item</h1>
-                <div class="card">Add product form goes here</div>
-            `;
-        } else if (section === "list") {
-            content.innerHTML = `
-                <h1>List Items</h1>
-                <div class="card">Product list goes here</div>
-            `;
-        } else if (section === "edit") {
-            content.innerHTML = `
-                <h1>Edit Items</h1>
-                <div class="card">Edit product UI goes here</div>
-            `;
-        } else if (section === "orders") {
-            content.innerHTML = `
-                <h1>Orders</h1>
-                <div class="card">Customer orders will appear here</div>
-            `;
-        }
-    }
-</script>
 
 </body>
 </html>

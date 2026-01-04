@@ -4,8 +4,10 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-        path('sellerlogin',views.sellerloginpage,name="sellerlogin"),
+        path('sellerloginpage',views.sellerloginpage,name="sellerloginpage"),
+        path('sellerlogin',views.sellerlogin,name="sellerlogin"),
         path('sellerhome',views.sellerhomepage,name="sellerhome"),
+
 ]
 
 if settings.DEBUG:
